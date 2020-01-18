@@ -25,7 +25,7 @@ io.on('connection', (client) => {
 
         client.broadcast.to(usuario.sala).emit('listaPersonas', usuarios.getPersonasPorSala(usuario.sala));
 
-        callback(usuarios.getPersonasPorSala(usuarios.sala));
+        callback(usuarios.getPersonasPorSala(usuario.sala));
     });
 
 
